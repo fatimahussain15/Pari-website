@@ -271,14 +271,14 @@
     <input type="hidden" name="contact[tags]" value="newsletter">
     <input type="email" name="contact[email]" id="NewsletterEmail" placeholder="Enter your email address" required>
     <button type="submit">Notify Me</button>
+    {%- if form.posted_successfully? -%}
+      <p class="signup-msg" id="signupMsg">You're on the list. See you at launch. ✦</p>
+    {%- elsif form.errors -%}
+      <p class="signup-msg" id="signupMsg">{{ form.errors | default_errors }}</p>
+    {%- else -%}
+      <p class="signup-msg" id="signupMsg"></p>
+    {%- endif -%}
   {%- endform -%}
-  {%- if form.posted_successfully? -%}
-    <p class="signup-msg" id="signupMsg">You're on the list. See you at launch. ✦</p>
-  {%- elsif form.errors -%}
-    <p class="signup-msg" id="signupMsg">{{ form.errors | default_errors }}</p>
-  {%- else -%}
-    <p class="signup-msg" id="signupMsg"></p>
-  {%- endif -%}
 
   <div class="countdown" id="countdown">
     <div class="countdown-unit reveal">
