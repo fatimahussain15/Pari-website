@@ -359,11 +359,18 @@
 {% schema %}
 {
   "name": "Pari storefront",
+  "tag": "section",
+  "class": "section-pari-storefront",
   "settings": [
     { "type": "text", "id": "announcement_text", "label": "Announcement text", "default": "✦ Launching February 25, 2026 — First Drop ✦ Free shipping on orders over $75 ✦ The ritual you deserve ✦" },
     { "type": "text", "id": "launch_display_text", "label": "Launch display text", "default": "February 25, 2026" },
     { "type": "text", "id": "launch_short_text", "label": "Launch short text", "default": "Feb 25" },
     { "type": "text", "id": "launch_date", "label": "Launch datetime (ISO)", "default": "2026-02-25T00:00:00" }
+  ],
+  "presets": [
+    {
+      "name": "Pari storefront"
+    }
   ]
 }
 {% endschema %}
