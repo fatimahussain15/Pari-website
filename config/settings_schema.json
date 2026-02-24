@@ -20,5 +20,293 @@
         "label": "Favicon"
       }
     ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color_scheme_group",
+        "id": "color_schemes",
+        "definition": [
+          {
+            "type": "color",
+            "id": "background",
+            "label": "Background",
+            "default": "#FFFFFF",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "foreground_heading",
+            "label": "Headings",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "foreground",
+            "label": "Text",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "primary",
+            "label": "Primary",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "primary_hover",
+            "label": "Primary hover",
+            "default": "#333333",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "border",
+            "label": "Borders",
+            "default": "#E6E6E6",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "shadow",
+            "label": "Shadow",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "header",
+            "content": "Primary button"
+          },
+          {
+            "type": "color",
+            "id": "primary_button_background",
+            "label": "Background",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "primary_button_text",
+            "label": "Text",
+            "default": "#FFFFFF",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "primary_button_border",
+            "label": "Border",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "primary_button_hover_background",
+            "label": "Hover background",
+            "default": "#333333",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "primary_button_hover_text",
+            "label": "Hover text",
+            "default": "#FFFFFF",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "primary_button_hover_border",
+            "label": "Hover border",
+            "default": "#333333",
+            "alpha": true
+          },
+          {
+            "type": "header",
+            "content": "Secondary button"
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_background",
+            "label": "Background",
+            "default": "rgba(0,0,0,0)",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_text",
+            "label": "Text",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_border",
+            "label": "Border",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_hover_background",
+            "label": "Hover background",
+            "default": "#FAFAFA",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_hover_text",
+            "label": "Hover text",
+            "default": "#333333",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_hover_border",
+            "label": "Hover border",
+            "default": "#333333",
+            "alpha": true
+          },
+          {
+            "type": "header",
+            "content": "Inputs"
+          },
+          {
+            "type": "color",
+            "id": "input_background",
+            "label": "Background",
+            "default": "#FFFFFF",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "input_text_color",
+            "label": "Text",
+            "default": "#333333",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "input_border_color",
+            "label": "Border",
+            "default": "#DFDFDF",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "input_hover_background",
+            "label": "Hover background",
+            "default": "#00000003",
+            "alpha": true
+          },
+          {
+            "type": "header",
+            "content": "Variant buttons"
+          },
+          {
+            "type": "color",
+            "id": "variant_background_color",
+            "label": "Background",
+            "default": "#FFFFFF",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "variant_text_color",
+            "label": "Text",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "variant_border_color",
+            "label": "Border",
+            "default": "#00000021",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "variant_hover_background_color",
+            "label": "Hover background",
+            "default": "#F5F5F5",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "variant_hover_text_color",
+            "label": "Hover text",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "variant_hover_border_color",
+            "label": "Hover border",
+            "default": "#E6E6E6",
+            "alpha": true
+          },
+          {
+            "type": "header",
+            "content": "Selected variants"
+          },
+          {
+            "type": "color",
+            "id": "selected_variant_background_color",
+            "label": "Background",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "selected_variant_text_color",
+            "label": "Text",
+            "default": "#FFFFFF",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "selected_variant_border_color",
+            "label": "Border",
+            "default": "#000000",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "selected_variant_hover_background_color",
+            "label": "Hover background",
+            "default": "#1A1A1A",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "selected_variant_hover_text_color",
+            "label": "Hover text",
+            "default": "#FFFFFF",
+            "alpha": true
+          },
+          {
+            "type": "color",
+            "id": "selected_variant_hover_border_color",
+            "label": "Hover border",
+            "default": "#1A1A1A",
+            "alpha": true
+          }
+        ],
+        "role": {
+          "text": "foreground",
+          "background": "background",
+          "links": "primary",
+          "icons": "foreground",
+          "primary_button": "primary_button_background",
+          "on_primary_button": "primary_button_text",
+          "primary_button_border": "primary_button_border",
+          "secondary_button": "secondary_button_background",
+          "on_secondary_button": "secondary_button_text",
+          "secondary_button_border": "secondary_button_border"
+        }
+      }
+    ]
   }
 ]
