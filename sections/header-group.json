@@ -1,0 +1,28 @@
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "header_section": {
+      "type": "header-nav",
+      "settings": {
+        "logo_text": "Pari & Co",
+        "logo_link": "/",
+        "link_1_text": "The Drop",
+        "link_2_text": "The Ritual",
+        "link_3_text": "Our Story",
+        "cta_text": "Shop Feb 25"
+      }
+    },
+    "announcement_bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "text": "✦ Launching February 25, 2026 — First Drop ✦ Free shipping on orders over $75 ✦ The ritual you deserve ✦"
+      }
+    }
+  },
+  "order": [
+    "announcement_bar",
+    "header_section"
+  ]
+}
+

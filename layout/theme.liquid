@@ -8,9 +8,18 @@
     {{ 'storefront.css' | asset_url | stylesheet_tag }}
   </head>
   <body class="pari-storefront">
+    <div id="header-group">
+      {% sections 'header-group' %}
+    </div>
+
     <main id="MainContent">
       {{ content_for_layout }}
     </main>
+
+    <div id="footer-group">
+      {% sections 'footer-group' %}
+    </div>
+
     <script src="{{ 'storefront.js' | asset_url }}" defer></script>
   </body>
 </html>

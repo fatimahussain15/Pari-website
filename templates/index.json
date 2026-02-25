@@ -1,21 +1,5 @@
 {
   "sections": {
-    "announcement": {
-      "type": "announcement-bar",
-      "settings": {
-        "text": "✦ Launching February 25, 2026 — First Drop ✦ Free shipping on orders over $75 ✦ The ritual you deserve ✦"
-      }
-    },
-    "header": {
-      "type": "header-nav",
-      "settings": {
-        "logo_text": "Pari & Co",
-        "link_1_text": "The Drop",
-        "link_2_text": "The Ritual",
-        "link_3_text": "Our Story",
-        "cta_text": "Shop Feb 25"
-      }
-    },
     "hero": {
       "type": "hero",
       "settings": {
@@ -176,34 +160,9 @@
       "settings": {
         "heading": "What She's Saying"
       }
-    },
-    "newsletter": {
-      "type": "newsletter-signup",
-      "settings": {
-        "eyebrow": "Launching February 25, 2026",
-        "heading": "Be First.\nGlow First.",
-        "subheading": "Join the list for early access, exclusive launch pricing, and a personal reminder the moment we go live.",
-        "placeholder": "Enter your email address",
-        "button_text": "Notify Me",
-        "success_message": "You're on the list. See you at launch. ✦",
-        "launch_date": "2026-02-25T00:00:00"
-      }
-    },
-    "footer": {
-      "type": "footer",
-      "settings": {
-        "logo_text": "Pari & Co",
-        "tagline": "Luxury self-care rituals for the woman who does it all. Three products. One ritual. You, first.",
-        "col_1_title": "Shop",
-        "col_2_title": "About",
-        "col_3_title": "Support",
-        "copyright": "© 2026 Pari & Co. All rights reserved. Self-care is not selfish."
-      }
     }
   },
   "order": [
-    "announcement",
-    "header",
     "hero",
     "marquee",
     "intro",
@@ -211,8 +170,6 @@
     "ritual",
     "founder",
     "candle",
-    "testimonials",
-    "newsletter",
-    "footer"
+    "testimonials"
   ]
 }
