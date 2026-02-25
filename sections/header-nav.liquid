@@ -1,0 +1,29 @@
+<nav id="navbar">
+  <a href="{{ section.settings.logo_link }}" class="nav-logo">{{ section.settings.logo_text }}</a>
+  <ul class="nav-links">
+    <li><a href="#products">{{ section.settings.link_1_text }}</a></li>
+    <li><a href="#ritual">{{ section.settings.link_2_text }}</a></li>
+    <li><a href="#story">{{ section.settings.link_3_text }}</a></li>
+    <li><a href="#notify" class="nav-cta">{{ section.settings.cta_text }}</a></li>
+  </ul>
+  <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+{% schema %}
+{
+  "name": "Header",
+  "tag": "section",
+  "class": "section-header",
+  "settings": [
+    { "type": "text", "id": "logo_text", "label": "Logo text", "default": "Pari & Co" },
+    { "type": "url", "id": "logo_link", "label": "Logo link", "default": "/" },
+    { "type": "text", "id": "link_1_text", "label": "Nav link 1", "default": "The Drop" },
+    { "type": "text", "id": "link_2_text", "label": "Nav link 2", "default": "The Ritual" },
+    { "type": "text", "id": "link_3_text", "label": "Nav link 3", "default": "Our Story" },
+    { "type": "text", "id": "cta_text", "label": "Button text", "default": "Shop Feb 25" }
+  ],
+  "presets": [{ "name": "Header" }]
+}
+{% endschema %}

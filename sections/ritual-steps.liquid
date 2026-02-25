@@ -1,0 +1,54 @@
+<section class="ritual" id="ritual">
+  <div class="ritual-header reveal">
+    <span style="font-size:0.62rem;letter-spacing:0.45em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1rem;">{{ section.settings.eyebrow }}</span>
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.subheading }}</p>
+  </div>
+  <div class="ritual-steps">
+    {% for block in section.blocks %}
+      <div class="ritual-step reveal {% if forloop.index == 2 %}reveal-delay-1{% elsif forloop.index == 3 %}reveal-delay-2{% endif %}" {{ block.shopify_attributes }}>
+        <div class="ritual-num">{{ block.settings.step_number }}</div>
+        <div class="ritual-icon">{{ block.settings.icon }}</div>
+        <h3>{{ block.settings.title }}</h3>
+        <p>{{ block.settings.body }}</p>
+        <div class="ritual-time">{{ block.settings.time }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ritual steps",
+  "tag": "section",
+  "class": "section-ritual",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "The Pari & Co Method" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Your 3-Step Ritual" },
+    { "type": "text", "id": "subheading", "label": "Subheading", "default": "Designed to fit inside the life you already have. No extra time needed." }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        { "type": "text", "id": "step_number", "label": "Step number", "default": "01" },
+        { "type": "text", "id": "icon", "label": "Icon (emoji or text)", "default": "💋" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Scrub" },
+        { "type": "textarea", "id": "body", "label": "Description", "default": "Start with Mish Lip Scrub. A gentle swipe of tallow and sugar wakes up your lips, buffs away dryness, and signals to your mind: this moment is yours." },
+        { "type": "text", "id": "time", "label": "Time label", "default": "30 seconds" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ritual steps",
+      "blocks": [
+        { "type": "step", "settings": { "step_number": "01", "icon": "💋", "title": "Scrub", "body": "Start with Mish Lip Scrub. A gentle swipe of tallow and sugar wakes up your lips, buffs away dryness, and signals to your mind: this moment is yours.", "time": "30 seconds" } },
+        { "type": "step", "settings": { "step_number": "02", "icon": "✨", "title": "Glow", "body": "Apply Éclat Face Cream. Rich, fast-absorbing, and anti-aging — it does the work of an entire skincare shelf in one single step.", "time": "60 seconds" } },
+        { "type": "step", "settings": { "step_number": "03", "icon": "🕯", "title": "Breathe", "body": "Light your Luminary. Let the Vanilla & Amber fill your space. This is your reminder — you lit yourself first. Everything else will follow.", "time": "Your moment" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,86 @@
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="{{ section.settings.logo_link }}" class="logo">{{ section.settings.logo_text }}</a>
+      <p>{{ section.settings.tagline }}</p>
+      <div class="footer-social">
+        {% if section.settings.social_1_url != blank %}<a href="{{ section.settings.social_1_url }}">{{ section.settings.social_1_label }}</a>{% endif %}
+        {% if section.settings.social_2_url != blank %}<a href="{{ section.settings.social_2_url }}">{{ section.settings.social_2_label }}</a>{% endif %}
+        {% if section.settings.social_3_url != blank %}<a href="{{ section.settings.social_3_url }}">{{ section.settings.social_3_label }}</a>{% endif %}
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>{{ section.settings.col_1_title }}</h4>
+      <ul>
+        <li><a href="#products">{{ section.settings.col_1_link_1_text }}</a></li>
+        <li><a href="#products">{{ section.settings.col_1_link_2_text }}</a></li>
+        <li><a href="#products">{{ section.settings.col_1_link_3_text }}</a></li>
+        <li><a href="#products">{{ section.settings.col_1_link_4_text }}</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>{{ section.settings.col_2_title }}</h4>
+      <ul>
+        <li><a href="#story">{{ section.settings.col_2_link_1_text }}</a></li>
+        <li><a href="#ritual">{{ section.settings.col_2_link_2_text }}</a></li>
+        <li><a href="#">{{ section.settings.col_2_link_3_text }}</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>{{ section.settings.col_3_title }}</h4>
+      <ul>
+        <li><a href="#">{{ section.settings.col_3_link_1_text }}</a></li>
+        <li><a href="#">{{ section.settings.col_3_link_2_text }}</a></li>
+        <li><a href="#">{{ section.settings.col_3_link_3_text }}</a></li>
+        <li><a href="#">{{ section.settings.col_3_link_4_text }}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>{{ section.settings.copyright }}</p>
+    <p>
+      {% if section.settings.privacy_url != blank %}<a href="{{ section.settings.privacy_url }}">Privacy</a>{% endif %}
+      {% if section.settings.terms_url != blank %} · <a href="{{ section.settings.terms_url }}">Terms</a>{% endif %}
+      {% if section.settings.refunds_url != blank %} · <a href="{{ section.settings.refunds_url }}">Refunds</a>{% endif %}
+    </p>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "tag": "section",
+  "class": "section-footer",
+  "settings": [
+    { "type": "text", "id": "logo_text", "label": "Logo text", "default": "Pari & Co" },
+    { "type": "url", "id": "logo_link", "label": "Logo link", "default": "/" },
+    { "type": "textarea", "id": "tagline", "label": "Tagline", "default": "Luxury self-care rituals for the woman who does it all. Three products. One ritual. You, first." },
+    { "type": "text", "id": "social_1_label", "label": "Social 1 label", "default": "f" },
+    { "type": "url", "id": "social_1_url", "label": "Social 1 URL" },
+    { "type": "text", "id": "social_2_label", "label": "Social 2 label", "default": "ig" },
+    { "type": "url", "id": "social_2_url", "label": "Social 2 URL" },
+    { "type": "text", "id": "social_3_label", "label": "Social 3 label", "default": "tk" },
+    { "type": "url", "id": "social_3_url", "label": "Social 3 URL" },
+    { "type": "text", "id": "col_1_title", "label": "Column 1 title", "default": "Shop" },
+    { "type": "text", "id": "col_1_link_1_text", "label": "Col 1 link 1", "default": "Éclat Face Cream" },
+    { "type": "text", "id": "col_1_link_2_text", "label": "Col 1 link 2", "default": "Mish Lip Scrub" },
+    { "type": "text", "id": "col_1_link_3_text", "label": "Col 1 link 3", "default": "Light Yourself First Luminary" },
+    { "type": "text", "id": "col_1_link_4_text", "label": "Col 1 link 4", "default": "The Full Ritual Set" },
+    { "type": "text", "id": "col_2_title", "label": "Column 2 title", "default": "About" },
+    { "type": "text", "id": "col_2_link_1_text", "label": "Col 2 link 1", "default": "Our Story" },
+    { "type": "text", "id": "col_2_link_2_text", "label": "Col 2 link 2", "default": "The Ritual" },
+    { "type": "text", "id": "col_2_link_3_text", "label": "Col 2 link 3", "default": "Contact" },
+    { "type": "text", "id": "col_3_title", "label": "Column 3 title", "default": "Support" },
+    { "type": "text", "id": "col_3_link_1_text", "label": "Col 3 link 1", "default": "Shipping Policy" },
+    { "type": "text", "id": "col_3_link_2_text", "label": "Col 3 link 2", "default": "Returns" },
+    { "type": "text", "id": "col_3_link_3_text", "label": "Col 3 link 3", "default": "Privacy Policy" },
+    { "type": "text", "id": "col_3_link_4_text", "label": "Col 3 link 4", "default": "Terms of Service" },
+    { "type": "text", "id": "copyright", "label": "Copyright line", "default": "© 2026 Pari & Co. All rights reserved. Self-care is not selfish." },
+    { "type": "url", "id": "privacy_url", "label": "Privacy policy URL" },
+    { "type": "url", "id": "terms_url", "label": "Terms URL" },
+    { "type": "url", "id": "refunds_url", "label": "Refunds URL" }
+  ],
+  "presets": [{ "name": "Footer" }]
+}
+{% endschema %}
+{% endschema %}

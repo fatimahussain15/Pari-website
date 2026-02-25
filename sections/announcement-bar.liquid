@@ -1,0 +1,20 @@
+<div class="announcement">
+  {{ section.settings.text }}
+</div>
+
+{% schema %}
+{
+  "name": "Announcement bar",
+  "tag": "section",
+  "class": "section-announcement",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Announcement text",
+      "default": "✦ Launching February 25, 2026 — First Drop ✦ Free shipping on orders over $75 ✦ The ritual you deserve ✦"
+    }
+  ],
+  "presets": [{ "name": "Announcement bar" }]
+}
+{% endschema %}

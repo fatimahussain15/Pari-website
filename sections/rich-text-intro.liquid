@@ -1,0 +1,42 @@
+<section style="background:var(--cream);">
+  <div class="intro">
+    <div class="intro-text">
+      <p class="intro-label reveal">{{ section.settings.label }}</p>
+      <h2 class="reveal">{{ section.settings.heading | newline_to_br }}</h2>
+      <div class="intro-stats">
+        <div class="reveal reveal-delay-1">
+          <span class="stat-num">{{ section.settings.stat_1_number }}</span>
+          <span class="stat-label">{{ section.settings.stat_1_text }}</span>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <span class="stat-num">{{ section.settings.stat_2_number }}</span>
+          <span class="stat-label">{{ section.settings.stat_2_text }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="intro-body reveal">
+      {{ section.settings.body | newline_to_br }}
+      <a href="{{ section.settings.button_link }}" class="btn-gold" style="margin-top:2rem;display:inline-block;">{{ section.settings.button_text }}</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Intro / Philosophy",
+  "tag": "section",
+  "class": "section-intro",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Small label", "default": "The Philosophy" },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Self-care isn't\nselfish. It's the\nfoundation." },
+    { "type": "text", "id": "stat_1_number", "label": "Stat 1 number", "default": "3" },
+    { "type": "text", "id": "stat_1_text", "label": "Stat 1 text", "default": "Products. One ritual." },
+    { "type": "text", "id": "stat_2_number", "label": "Stat 2 number", "default": "60sec" },
+    { "type": "text", "id": "stat_2_text", "label": "Stat 2 text", "default": "That's all it takes." },
+    { "type": "textarea", "id": "body", "label": "Body paragraphs", "default": "You run the meetings. You pack the lunches. You hold everything together — and somewhere between all of it, you lost your five minutes.\n\nPari & Co was born for you. Not a 10-step routine. Not another thing on your list. Just three thoughtfully crafted products that work as one effortless ritual.\n\nBecause you deserve radiance, softness, and a moment of quiet — every single day." },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "Explore The Drop" },
+    { "type": "url", "id": "button_link", "label": "Button link", "default": "/#products" }
+  ],
+  "presets": [{ "name": "Intro / Philosophy" }]
+}
+{% endschema %}

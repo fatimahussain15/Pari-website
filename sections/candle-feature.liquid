@@ -1,0 +1,24 @@
+<section class="candle-feature">
+  <span class="section-label reveal">{{ section.settings.label }}</span>
+  <p class="candle-quote reveal">{{ section.settings.quote | newline_to_br }}</p>
+  <p class="candle-attribution reveal">{{ section.settings.attribution }}</p>
+  <p class="candle-body reveal">{{ section.settings.body }}</p>
+  <a href="{{ section.settings.button_link }}" class="btn-gold reveal">{{ section.settings.button_text }}</a>
+</section>
+
+{% schema %}
+{
+  "name": "Candle / Feature",
+  "tag": "section",
+  "class": "section-candle",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "The Luminary" },
+    { "type": "textarea", "id": "quote", "label": "Quote", "default": "Light yourself first.\nEverything else will follow." },
+    { "type": "text", "id": "attribution", "label": "Attribution", "default": "— Vanilla & Amber · 9 oz Luxury Soy · Hand Poured" },
+    { "type": "textarea", "id": "body", "label": "Body", "default": "More than a scent. More than a candle. It's the philosophy your whole ritual is built on. A daily act of choosing yourself — one flame at a time." },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "Be First to Shop" },
+    { "type": "url", "id": "button_link", "label": "Button link", "default": "/#notify" }
+  ],
+  "presets": [{ "name": "Candle / Feature" }]
+}
+{% endschema %}

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{{ page_title }}</title>
     {{ content_for_header }}
+    {{ 'storefront.css' | asset_url | stylesheet_tag }}
   </head>
-  <body>
+  <body class="pari-storefront">
     <main id="MainContent">
       {{ content_for_layout }}
     </main>
+    <script src="{{ 'storefront.js' | asset_url }}" defer></script>
   </body>
 </html>
