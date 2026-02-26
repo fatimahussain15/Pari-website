@@ -1,0 +1,47 @@
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-glow"></div>
+    <p class="hero-eyebrow">{{ section.settings.eyebrow }}</p>
+    <h1 class="hero-title">{{ section.settings.title | newline_to_br }}</h1>
+    <p class="hero-body">{{ section.settings.body }}</p>
+    <div class="hero-actions">
+      <a href="{{ section.settings.cta_primary_link }}" class="btn-gold">{{ section.settings.cta_primary_text }}</a>
+      <a href="{{ section.settings.cta_secondary_link }}" class="btn-outline">{{ section.settings.cta_secondary_text }}</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    {% if section.settings.image != blank %}
+      <img src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.image.alt | default: section.settings.eyebrow }}" width="1200" height="800" loading="eager" style="width:100%;height:100%;object-fit:cover;">
+    {% else %}
+      <div style="width:100%;height:100%;background:linear-gradient(135deg, #2C1F14 0%, #1A1410 60%, #0F0C09 100%);display:flex;align-items:center;justify-content:center;">
+        <div style="text-align:center;color:rgba(201,169,110,0.3);">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:8rem;line-height:1;">✦</div>
+          <div style="font-size:0.65rem;letter-spacing:0.4em;text-transform:uppercase;margin-top:1rem;">Add your hero image here</div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+  <div class="hero-scroll">
+    <span>Discover</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "tag": "section",
+  "class": "section-hero",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow text", "default": "Pari & Co — First Drop" },
+    { "type": "textarea", "id": "title", "label": "Heading", "default": "You Give\nEverything.\nKeep Some\nFor You." },
+    { "type": "textarea", "id": "body", "label": "Body text", "default": "A curated trio of luxury essentials for the woman who runs it all — and deserves a ritual that's entirely hers. Launching February 25, 2026." },
+    { "type": "text", "id": "cta_primary_text", "label": "Primary button text", "default": "Notify Me at Launch" },
+    { "type": "url", "id": "cta_primary_link", "label": "Primary button link", "default": "/#notify" },
+    { "type": "text", "id": "cta_secondary_text", "label": "Secondary button text", "default": "See The Drop" },
+    { "type": "url", "id": "cta_secondary_link", "label": "Secondary button link", "default": "/#products" },
+    { "type": "image_picker", "id": "image", "label": "Hero image" }
+  ],
+  "presets": [{ "name": "Hero" }]
+}
+{% endschema %}

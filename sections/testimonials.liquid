@@ -1,0 +1,44 @@
+<section class="testimonials">
+  <h2 class="reveal">{{ section.settings.heading }}</h2>
+  <div class="testimonials-grid">
+    {% for block in section.blocks %}
+      <div class="testimonial-card reveal {% if forloop.index == 2 %}reveal-delay-1{% elsif forloop.index == 3 %}reveal-delay-2{% endif %}" {{ block.shopify_attributes }}>
+        <div class="stars">{{ section.settings.star_display }}</div>
+        <p class="testimonial-text">"{{ block.settings.quote }}"</p>
+        <span class="testimonial-author">{{ block.settings.author }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "tag": "section",
+  "class": "section-testimonials",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "What She's Saying" },
+    { "type": "text", "id": "star_display", "label": "Stars (display)", "default": "★★★★★" }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        { "type": "textarea", "id": "quote", "label": "Quote", "default": "Finally a routine I can actually stick to. One jar, one minute — and I actually look forward to it every morning." },
+        { "type": "text", "id": "author", "label": "Author", "default": "Sarah M. — Mom of 3, Marketing Director" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+        { "type": "testimonial", "settings": { "quote": "Finally a routine I can actually stick to. One jar, one minute — and I actually look forward to it every morning.", "author": "Sarah M. — Mom of 3, Marketing Director" } },
+        { "type": "testimonial", "settings": { "quote": "The Mish Lip Scrub is everything. The ingredients are clean, it works instantly, and the packaging is absolutely stunning.", "author": "Layla R. — Entrepreneur & Mom" } },
+        { "type": "testimonial", "settings": { "quote": "I light that candle every night after the kids are in bed. It's become my signal to myself that my time has started.", "author": "Priya K. — Healthcare Professional" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

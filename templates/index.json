@@ -1,0 +1,175 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "eyebrow": "Pari & Co — First Drop",
+        "title": "You Give\nEverything.\nKeep Some\nFor You.",
+        "body": "A curated trio of luxury essentials for the woman who runs it all — and deserves a ritual that's entirely hers. Launching February 25, 2026.",
+        "cta_primary_text": "Notify Me at Launch",
+        "cta_secondary_text": "See The Drop"
+      }
+    },
+    "marquee": {
+      "type": "marquee",
+      "settings": {
+        "launch_text": "Launching Feb 25"
+      }
+    },
+    "intro": {
+      "type": "rich-text-intro",
+      "settings": {
+        "label": "The Philosophy",
+        "heading": "Self-care isn't\nselfish. It's the\nfoundation.",
+        "stat_1_number": "3",
+        "stat_1_text": "Products. One ritual.",
+        "stat_2_number": "60sec",
+        "stat_2_text": "That's all it takes.",
+        "button_text": "Explore The Drop"
+      }
+    },
+    "products": {
+      "type": "product-cards",
+      "blocks": {
+        "product_1": {
+          "type": "product",
+          "settings": {
+            "category": "Skincare — Anti-Aging",
+            "title": "Éclat Face Cream",
+            "description": "Your entire anti-aging routine in one luxurious jar. Firms, hydrates, and reduces fine lines — in under a minute.",
+            "price_text": "Coming Soon",
+            "button_text": "Notify Me",
+            "tag": "New"
+          }
+        },
+        "product_2": {
+          "type": "product",
+          "settings": {
+            "category": "Lip Care — Original & Vegan",
+            "title": "Mish Lip Scrub",
+            "description": "Tallow & white sugar — or plant-based. Same magic, your choice. Impossibly soft lips in 60 seconds.",
+            "price_text": "Coming Soon",
+            "button_text": "Notify Me",
+            "tag": "New"
+          }
+        },
+        "product_3": {
+          "type": "product",
+          "settings": {
+            "category": "Lifestyle — Luxury Soy Luminary",
+            "title": "\"Light Yourself First\" Luminary",
+            "description": "Vanilla & Amber. Hand poured. 9 oz. A daily reminder that you matter — wrapped in a flame.",
+            "price_text": "Coming Soon",
+            "button_text": "Notify Me",
+            "tag": "New"
+          }
+        }
+      },
+      "block_order": ["product_1", "product_2", "product_3"],
+      "settings": {
+        "section_eyebrow": "February 25, 2026",
+        "heading": "Three Products.\nOne Ritual.",
+        "subheading": "Each piece crafted with intention. Each one designed to fit into your life — not the other way around."
+      }
+    },
+    "ritual": {
+      "type": "ritual-steps",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "step_number": "01",
+            "icon": "💋",
+            "title": "Scrub",
+            "body": "Start with Mish Lip Scrub. A gentle swipe of tallow and sugar wakes up your lips, buffs away dryness, and signals to your mind: this moment is yours.",
+            "time": "30 seconds"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "step_number": "02",
+            "icon": "✨",
+            "title": "Glow",
+            "body": "Apply Éclat Face Cream. Rich, fast-absorbing, and anti-aging — it does the work of an entire skincare shelf in one single step.",
+            "time": "60 seconds"
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "step_number": "03",
+            "icon": "🕯",
+            "title": "Breathe",
+            "body": "Light your Luminary. Let the Vanilla & Amber fill your space. This is your reminder — you lit yourself first. Everything else will follow.",
+            "time": "Your moment"
+          }
+        }
+      },
+      "block_order": ["step_1", "step_2", "step_3"],
+      "settings": {
+        "eyebrow": "The Pari & Co Method",
+        "heading": "Your 3-Step Ritual",
+        "subheading": "Designed to fit inside the life you already have. No extra time needed."
+      }
+    },
+    "founder": {
+      "type": "founder",
+      "settings": {
+        "quote": "I created this for the woman who gives everyone her best — and saves nothing for herself.",
+        "body": "As a busy professional woman — and a mom — I know what it's like to run on empty. To look in the mirror and not recognize yourself anymore. Not because you've aged, but because you've simply stopped showing up for you.\n\nI didn't want a 10-step routine. I wanted something real, luxurious, and fast. So I built it. Three products that work together as a ritual: scrub, hydrate, breathe. That's it. That's enough.\n\nYou are worthy of care. This drop is for you.",
+        "signature": "The Founder, Pari & Co"
+      }
+    },
+    "candle": {
+      "type": "candle-feature",
+      "settings": {
+        "label": "The Luminary",
+        "quote": "Light yourself first.\nEverything else will follow.",
+        "attribution": "— Vanilla & Amber · 9 oz Luxury Soy · Hand Poured",
+        "body": "More than a scent. More than a candle. It's the philosophy your whole ritual is built on. A daily act of choosing yourself — one flame at a time.",
+        "button_text": "Be First to Shop"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Finally a routine I can actually stick to. One jar, one minute — and I actually look forward to it every morning.",
+            "author": "Sarah M. — Mom of 3, Marketing Director"
+          }
+        },
+        "t2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The Mish Lip Scrub is everything. The ingredients are clean, it works instantly, and the packaging is absolutely stunning.",
+            "author": "Layla R. — Entrepreneur & Mom"
+          }
+        },
+        "t3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I light that candle every night after the kids are in bed. It's become my signal to myself that my time has started.",
+            "author": "Priya K. — Healthcare Professional"
+          }
+        }
+      },
+      "block_order": ["t1", "t2", "t3"],
+      "settings": {
+        "heading": "What She's Saying"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "marquee",
+    "intro",
+    "products",
+    "ritual",
+    "founder",
+    "candle",
+    "testimonials"
+  ]
+}

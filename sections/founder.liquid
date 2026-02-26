@@ -1,0 +1,39 @@
+<section class="founder" id="story">
+  <div class="founder-text reveal">
+    <div class="founder-quote">"{{ section.settings.quote }}"</div>
+    <div class="founder-body">
+      {{ section.settings.body | newline_to_br }}
+    </div>
+    <div class="founder-sig">— {{ section.settings.signature }}</div>
+  </div>
+  <div class="founder-visual reveal">
+    <div class="founder-img-wrap">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.image.alt | default: 'Founder' }}" width="800" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+      {% else %}
+        <div class="founder-img-placeholder">
+          <div style="text-align:center;color:rgba(201,169,110,0.3);">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:5rem;">✦</div>
+            <div style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;margin-top:1rem;">Add founder photo</div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+    <div class="founder-frame"></div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Founder / Story",
+  "tag": "section",
+  "class": "section-founder",
+  "settings": [
+    { "type": "textarea", "id": "quote", "label": "Quote", "default": "I created this for the woman who gives everyone her best — and saves nothing for herself." },
+    { "type": "textarea", "id": "body", "label": "Body text", "default": "As a busy professional woman — and a mom — I know what it's like to run on empty. To look in the mirror and not recognize yourself anymore. Not because you've aged, but because you've simply stopped showing up for you.\n\nI didn't want a 10-step routine. I wanted something real, luxurious, and fast. So I built it. Three products that work together as a ritual: scrub, hydrate, breathe. That's it. That's enough.\n\nYou are worthy of care. This drop is for you." },
+    { "type": "text", "id": "signature", "label": "Signature line", "default": "The Founder, Pari & Co" },
+    { "type": "image_picker", "id": "image", "label": "Founder image" }
+  ],
+  "presets": [{ "name": "Founder / Story" }]
+}
+{% endschema %}

@@ -1,0 +1,76 @@
+<section class="products" id="products">
+  <div class="products-header reveal">
+    <span style="font-size:0.62rem;letter-spacing:0.45em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1rem;">The Drop — {{ section.settings.section_eyebrow }}</span>
+    <h2>{{ section.settings.heading | newline_to_br }}</h2>
+    <p>{{ section.settings.subheading }}</p>
+  </div>
+
+  <div class="products-grid">
+    {% for block in section.blocks %}
+      <div class="product-card reveal" {{ block.shopify_attributes }}>
+        <div class="product-img-wrap">
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.image.alt | default: block.settings.title }}" width="600" loading="lazy">
+          {% else %}
+            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#3D2B1F,#1A1410);">
+              <div style="width:80px;height:80px;border-radius:50%;border:1px solid rgba(201,169,110,0.3);display:flex;align-items:center;justify-content:center;color:#C9A96E;">✦</div>
+              <span>Add product image</span>
+            </div>
+          {% endif %}
+          <div class="product-overlay">
+            <a href="{{ block.settings.link }}">Shop Now</a>
+          </div>
+          {% if block.settings.tag != blank %}<span class="product-tag">{{ block.settings.tag }}</span>{% endif %}
+        </div>
+        <div class="product-info">
+          <span class="product-category">{{ block.settings.category }}</span>
+          <h3 class="product-name">{{ block.settings.title }}</h3>
+          <p class="product-desc">{{ block.settings.description }}</p>
+          <div class="product-footer">
+            <span class="product-price">{{ block.settings.price_text }}</span>
+            <a href="{{ block.settings.link }}" class="product-btn">{{ block.settings.button_text }}</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product cards",
+  "tag": "section",
+  "class": "section-products",
+  "settings": [
+    { "type": "text", "id": "section_eyebrow", "label": "Section eyebrow", "default": "February 25, 2026" },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Three Products.\nOne Ritual." },
+    { "type": "text", "id": "subheading", "label": "Subheading", "default": "Each piece crafted with intention. Each one designed to fit into your life — not the other way around." }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product card",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "category", "label": "Category", "default": "Skincare" },
+        { "type": "text", "id": "title", "label": "Product name", "default": "Product name" },
+        { "type": "textarea", "id": "description", "label": "Description", "default": "Short description." },
+        { "type": "text", "id": "price_text", "label": "Price or status", "default": "Coming Soon" },
+        { "type": "text", "id": "button_text", "label": "Button text", "default": "Notify Me" },
+        { "type": "url", "id": "link", "label": "Link", "default": "/#notify" },
+        { "type": "text", "id": "tag", "label": "Badge (e.g. New)", "default": "New" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product cards",
+      "blocks": [
+        { "type": "product", "settings": { "category": "Skincare — Anti-Aging", "title": "Éclat Face Cream", "description": "Your entire anti-aging routine in one luxurious jar. Firms, hydrates, and reduces fine lines — in under a minute." } },
+        { "type": "product", "settings": { "category": "Lip Care — Original & Vegan", "title": "Mish Lip Scrub", "description": "Tallow & white sugar — or plant-based. Same magic, your choice. Impossibly soft lips in 60 seconds." } },
+        { "type": "product", "settings": { "category": "Lifestyle — Luxury Soy Luminary", "title": "\"Light Yourself First\" Luminary", "description": "Vanilla & Amber. Hand poured. 9 oz. A daily reminder that you matter — wrapped in a flame." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

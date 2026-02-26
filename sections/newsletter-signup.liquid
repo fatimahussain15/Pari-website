@@ -1,0 +1,62 @@
+<section class="signup" id="notify">
+  <span class="signup-eyebrow">{{ section.settings.eyebrow }}</span>
+  <h2 class="reveal">{{ section.settings.heading | newline_to_br }}</h2>
+  <p class="signup-sub reveal">{{ section.settings.subheading }}</p>
+
+  {% form 'customer', class: 'signup-form reveal' %}
+    <input type="hidden" name="contact[tags]" value="newsletter">
+    <input type="email" name="contact[email]" id="NewsletterEmail" placeholder="{{ section.settings.placeholder }}" required>
+    <button type="submit">{{ section.settings.button_text }}</button>
+    {% if form.posted_successfully? %}
+      <p class="signup-msg" id="signupMsg">{{ section.settings.success_message }}</p>
+    {% elsif form.errors %}
+      <p class="signup-msg" id="signupMsg">{{ form.errors | default_errors }}</p>
+    {% else %}
+      <p class="signup-msg" id="signupMsg"></p>
+    {% endif %}
+  {% endform %}
+
+  <div class="countdown" id="countdown">
+    <div class="countdown-unit reveal">
+      <span class="countdown-num" id="days">--</span>
+      <span class="countdown-label">Days</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit reveal reveal-delay-1">
+      <span class="countdown-num" id="hours">--</span>
+      <span class="countdown-label">Hours</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit reveal reveal-delay-2">
+      <span class="countdown-num" id="mins">--</span>
+      <span class="countdown-label">Minutes</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit reveal reveal-delay-3">
+      <span class="countdown-num" id="secs">--</span>
+      <span class="countdown-label">Seconds</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  window.pariLaunchDate = {{ section.settings.launch_date | json }};
+</script>
+
+{% schema %}
+{
+  "name": "Newsletter / Notify",
+  "tag": "section",
+  "class": "section-signup",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Launching February 25, 2026" },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Be First.\nGlow First." },
+    { "type": "text", "id": "subheading", "label": "Subheading", "default": "Join the list for early access, exclusive launch pricing, and a personal reminder the moment we go live." },
+    { "type": "text", "id": "placeholder", "label": "Email placeholder", "default": "Enter your email address" },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "Notify Me" },
+    { "type": "text", "id": "success_message", "label": "Success message", "default": "You're on the list. See you at launch. ✦" },
+    { "type": "text", "id": "launch_date", "label": "Launch date (ISO)", "default": "2026-02-25T00:00:00" }
+  ],
+  "presets": [{ "name": "Newsletter / Notify" }]
+}
+{% endschema %}

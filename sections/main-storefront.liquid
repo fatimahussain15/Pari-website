@@ -1,0 +1,373 @@
+<div class="pari-storefront">
+<!-- Announcement Bar -->
+<div class="announcement">
+  {{ section.settings.announcement_text }}
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Pari & Co</a>
+  <ul class="nav-links">
+    <li><a href="#products">The Drop</a></li>
+    <li><a href="#ritual">The Ritual</a></li>
+    <li><a href="#story">Our Story</a></li>
+    <li><a href="#notify" class="nav-cta">Shop {{ section.settings.launch_short_text }}</a></li>
+  </ul>
+  <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-glow"></div>
+    <p class="hero-eyebrow">Pari & Co — First Drop</p>
+    <h1 class="hero-title">
+      You Give<br>Everything.<br>
+      <em>Keep Some<br>For You.</em>
+    </h1>
+    <p class="hero-body">A curated trio of luxury essentials for the woman who runs it all — and deserves a ritual that's entirely hers. Launching {{ section.settings.launch_display_text }}.</p>
+    <div class="hero-actions">
+      <a href="#notify" class="btn-gold">Notify Me at Launch</a>
+      <a href="#products" class="btn-outline">See The Drop</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <!-- Replace src with your hero image -->
+    <div style="width:100%;height:100%;background:linear-gradient(135deg, #2C1F14 0%, #1A1410 60%, #0F0C09 100%);display:flex;align-items:center;justify-content:center;">
+      <div style="text-align:center;color:rgba(201,169,110,0.3);">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:8rem;line-height:1;">✦</div>
+        <div style="font-size:0.65rem;letter-spacing:0.4em;text-transform:uppercase;margin-top:1rem;">Add your hero image here</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Discover</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Éclat Face Cream</span><span class="dot">✦</span>
+    <span>Mish Lip Scrub</span><span class="dot">✦</span>
+    <span>Light Yourself First Luminary</span><span class="dot">✦</span>
+    <span>Launching {{ section.settings.launch_short_text }}</span><span class="dot">✦</span>
+    <span>Luxury For The Busy Woman</span><span class="dot">✦</span>
+    <span>Éclat Face Cream</span><span class="dot">✦</span>
+    <span>Mish Lip Scrub</span><span class="dot">✦</span>
+    <span>Light Yourself First Luminary</span><span class="dot">✦</span>
+    <span>Launching {{ section.settings.launch_short_text }}</span><span class="dot">✦</span>
+    <span>Luxury For The Busy Woman</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section style="background:var(--cream);">
+  <div class="intro">
+    <div class="intro-text">
+      <p class="intro-label reveal">The Philosophy</p>
+      <h2 class="reveal">Self-care isn't<br>selfish. It's the<br><em>foundation.</em></h2>
+      <div class="intro-stats">
+        <div class="reveal reveal-delay-1">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Products. One ritual.</span>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <span class="stat-num">60<span style="font-size:1.5rem;">sec</span></span>
+          <span class="stat-label">That's all it takes.</span>
+        </div>
+      </div>
+    </div>
+    <div class="intro-body reveal">
+      <p>You run the meetings. You pack the lunches. You hold everything together — and somewhere between all of it, you lost your five minutes.</p>
+      <p>Pari & Co was born for you. Not a 10-step routine. Not another thing on your list. Just three thoughtfully crafted products that work as one effortless ritual.</p>
+      <p>Because you deserve radiance, softness, and a moment of quiet — every single day.</p>
+      <a href="#products" class="btn-gold" style="margin-top:2rem;display:inline-block;">Explore The Drop</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="products-header reveal">
+    <span style="font-size:0.62rem;letter-spacing:0.45em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1rem;">The Drop — {{ section.settings.launch_display_text }}</span>
+    <h2>Three Products.<br>One Ritual.</h2>
+    <p>Each piece crafted with intention. Each one designed to fit into your life — not the other way around.</p>
+  </div>
+
+  <div class="products-grid">
+
+    <!-- Éclat Face Cream -->
+    <div class="product-card reveal">
+      <div class="product-img-wrap">
+        <div class="product-img-placeholder" style="background:linear-gradient(135deg,#3D2B1F,#1A1410);">
+          <div style="width:80px;height:80px;border-radius:50%;border:1px solid rgba(201,169,110,0.3);display:flex;align-items:center;justify-content:center;color:#C9A96E;">✦</div>
+          <span>Add product image</span>
+        </div>
+        <div class="product-overlay">
+          <a href="#notify">Shop Now</a>
+        </div>
+        <span class="product-tag">New</span>
+      </div>
+      <div class="product-info">
+        <span class="product-category">Skincare — Anti-Aging</span>
+        <h3 class="product-name">Éclat Face Cream</h3>
+        <p class="product-desc">Your entire anti-aging routine in one luxurious jar. Firms, hydrates, and reduces fine lines — in under a minute.</p>
+        <div class="product-footer">
+          <span class="product-price">Coming Soon</span>
+          <a href="#notify" class="product-btn">Notify Me</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mish Lip Scrub -->
+    <div class="product-card reveal reveal-delay-1">
+      <div class="product-img-wrap">
+        <div class="product-img-placeholder" style="background:linear-gradient(135deg,#F0E8C8,#C8A840);">
+          <div style="width:80px;height:80px;border-radius:50%;border:1px solid rgba(201,169,110,0.5);display:flex;align-items:center;justify-content:center;font-size:1.5rem;">🍋</div>
+          <span style="color:#5C4A32;">Add product image</span>
+        </div>
+        <div class="product-overlay">
+          <a href="#notify">Shop Now</a>
+        </div>
+        <span class="product-tag">New</span>
+      </div>
+      <div class="product-info">
+        <span class="product-category">Lip Care — Original & Vegan</span>
+        <h3 class="product-name">Mish Lip Scrub</h3>
+        <p class="product-desc">Tallow & white sugar — or plant-based. Same magic, your choice. Impossibly soft lips in 60 seconds.</p>
+        <div class="product-footer">
+          <span class="product-price">Coming Soon</span>
+          <a href="#notify" class="product-btn">Notify Me</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Candle -->
+    <div class="product-card reveal reveal-delay-2">
+      <div class="product-img-wrap">
+        <div class="product-img-placeholder" style="background:linear-gradient(135deg,#F5F0E8,#E0D4C0);">
+          <div style="width:80px;height:80px;border-radius:50%;border:1px solid rgba(201,169,110,0.4);display:flex;align-items:center;justify-content:center;font-size:1.8rem;">🕯</div>
+          <span style="color:#5C4A32;">Add product image</span>
+        </div>
+        <div class="product-overlay">
+          <a href="#notify">Shop Now</a>
+        </div>
+        <span class="product-tag">New</span>
+      </div>
+      <div class="product-info">
+        <span class="product-category">Lifestyle — Luxury Soy Luminary</span>
+        <h3 class="product-name">"Light Yourself First" Luminary</h3>
+        <p class="product-desc">Vanilla & Amber. Hand poured. 9 oz. A daily reminder that you matter — wrapped in a flame.</p>
+        <div class="product-footer">
+          <span class="product-price">Coming Soon</span>
+          <a href="#notify" class="product-btn">Notify Me</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RITUAL -->
+<section class="ritual" id="ritual">
+  <div class="ritual-header reveal">
+    <span style="font-size:0.62rem;letter-spacing:0.45em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1rem;">The Pari & Co Method</span>
+    <h2>Your 3-Step Ritual</h2>
+    <p>Designed to fit inside the life you already have. No extra time needed.</p>
+  </div>
+  <div class="ritual-steps">
+    <div class="ritual-step reveal">
+      <div class="ritual-num">01</div>
+      <div class="ritual-icon">💋</div>
+      <h3>Scrub</h3>
+      <p>Start with Mish Lip Scrub. A gentle swipe of tallow and sugar wakes up your lips, buffs away dryness, and signals to your mind: this moment is yours.</p>
+      <div class="ritual-time">30 seconds</div>
+    </div>
+    <div class="ritual-step reveal reveal-delay-1">
+      <div class="ritual-num">02</div>
+      <div class="ritual-icon">✨</div>
+      <h3>Glow</h3>
+      <p>Apply Éclat Face Cream. Rich, fast-absorbing, and anti-aging — it does the work of an entire skincare shelf in one single step.</p>
+      <div class="ritual-time">60 seconds</div>
+    </div>
+    <div class="ritual-step reveal reveal-delay-2">
+      <div class="ritual-num">03</div>
+      <div class="ritual-icon">🕯</div>
+      <h3>Breathe</h3>
+      <p>Light your Luminary. Let the Vanilla & Amber fill your space. This is your reminder — you lit yourself first. Everything else will follow.</p>
+      <div class="ritual-time">Your moment</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER STORY -->
+<section class="founder" id="story">
+  <div class="founder-text reveal">
+    <div class="founder-quote">
+      "I created this for the woman who gives everyone her best — and saves nothing for herself."
+    </div>
+    <div class="founder-body">
+      <p>As a busy professional woman — and a mom — I know what it's like to run on empty. To look in the mirror and not recognize yourself anymore. Not because you've aged, but because you've simply stopped showing up for you.</p>
+      <p>I didn't want a 10-step routine. I wanted something real, luxurious, and fast. So I built it. Three products that work together as a ritual: scrub, hydrate, breathe. That's it. That's enough.</p>
+      <p>You are worthy of care. This drop is for you.</p>
+    </div>
+    <div class="founder-sig">— The Founder, Pari & Co</div>
+  </div>
+  <div class="founder-visual reveal">
+    <div class="founder-img-wrap">
+      <div class="founder-img-placeholder">
+        <div style="text-align:center;color:rgba(201,169,110,0.3);">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:5rem;">✦</div>
+          <div style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;margin-top:1rem;">Add founder photo</div>
+        </div>
+      </div>
+    </div>
+    <div class="founder-frame"></div>
+  </div>
+</section>
+
+<!-- CANDLE HIGHLIGHT -->
+<section class="candle-feature">
+  <span class="section-label reveal">The Luminary</span>
+  <p class="candle-quote reveal">"Light yourself first.<br>Everything else will follow."</p>
+  <p class="candle-attribution reveal">— Vanilla & Amber · 9 oz Luxury Soy · Hand Poured</p>
+  <p class="candle-body reveal">More than a scent. More than a candle. It's the philosophy your whole ritual is built on. A daily act of choosing yourself — one flame at a time.</p>
+  <a href="#notify" class="btn-gold reveal">Be First to Shop</a>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2 class="reveal">What She's Saying</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Finally a routine I can actually stick to. One jar, one minute — and I actually look forward to it every morning."</p>
+      <span class="testimonial-author">Sarah M. — Mom of 3, Marketing Director</span>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-1">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"The Mish Lip Scrub is everything. The ingredients are clean, it works instantly, and the packaging is absolutely stunning."</p>
+      <span class="testimonial-author">Layla R. — Entrepreneur & Mom</span>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-2">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"I light that candle every night after the kids are in bed. It's become my signal to myself that my time has started."</p>
+      <span class="testimonial-author">Priya K. — Healthcare Professional</span>
+    </div>
+  </div>
+</section>
+
+<!-- EMAIL SIGNUP / NOTIFY -->
+<section class="signup" id="notify">
+  <span class="signup-eyebrow">Launching {{ section.settings.launch_display_text }}</span>
+  <h2 class="reveal">Be First.<br><em>Glow First.</em></h2>
+  <p class="signup-sub reveal">Join the list for early access, exclusive launch pricing, and a personal reminder the moment we go live.</p>
+
+  {%- form 'customer', class: 'signup-form reveal' -%}
+    <input type="hidden" name="contact[tags]" value="newsletter">
+    <input type="email" name="contact[email]" id="NewsletterEmail" placeholder="Enter your email address" required>
+    <button type="submit">Notify Me</button>
+    {%- if form.posted_successfully? -%}
+      <p class="signup-msg" id="signupMsg">You're on the list. See you at launch. ✦</p>
+    {%- elsif form.errors -%}
+      <p class="signup-msg" id="signupMsg">{{ form.errors | default_errors }}</p>
+    {%- else -%}
+      <p class="signup-msg" id="signupMsg"></p>
+    {%- endif -%}
+  {%- endform -%}
+
+  <div class="countdown" id="countdown">
+    <div class="countdown-unit reveal">
+      <span class="countdown-num" id="days">--</span>
+      <span class="countdown-label">Days</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit reveal reveal-delay-1">
+      <span class="countdown-num" id="hours">--</span>
+      <span class="countdown-label">Hours</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit reveal reveal-delay-2">
+      <span class="countdown-num" id="mins">--</span>
+      <span class="countdown-label">Minutes</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit reveal reveal-delay-3">
+      <span class="countdown-num" id="secs">--</span>
+      <span class="countdown-label">Seconds</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo">Pari & Co</a>
+      <p>Luxury self-care rituals for the woman who does it all. Three products. One ritual. You, first.</p>
+      <div class="footer-social">
+        <a href="#">f</a>
+        <a href="#">ig</a>
+        <a href="#">tk</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#products">Éclat Face Cream</a></li>
+        <li><a href="#products">Mish Lip Scrub</a></li>
+        <li><a href="#products">Light Yourself First Luminary</a></li>
+        <li><a href="#products">The Full Ritual Set</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#ritual">The Ritual</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Pari & Co. All rights reserved. Self-care is not selfish.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Refunds</a></p>
+  </div>
+</footer>
+</div>
+
+<script>
+  window.pariLaunchDate = {{ section.settings.launch_date | json }};
+</script>
+
+{% schema %}
+{
+  "name": "Pari storefront",
+  "tag": "section",
+  "class": "section-pari-storefront",
+  "settings": [
+    { "type": "text", "id": "announcement_text", "label": "Announcement text", "default": "✦ Launching February 25, 2026 — First Drop ✦ Free shipping on orders over $75 ✦ The ritual you deserve ✦" },
+    { "type": "text", "id": "launch_display_text", "label": "Launch display text", "default": "February 25, 2026" },
+    { "type": "text", "id": "launch_short_text", "label": "Launch short text", "default": "Feb 25" },
+    { "type": "text", "id": "launch_date", "label": "Launch datetime (ISO)", "default": "2026-02-25T00:00:00" }
+  ],
+  "presets": [
+    {
+      "name": "Pari storefront"
+    }
+  ]
+}
+{% endschema %}
